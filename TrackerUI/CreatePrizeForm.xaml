@@ -1,0 +1,100 @@
+﻿<Window x:Class="TrackerUI.CreatePrizeForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TrackerUI"
+        mc:Ignorable="d"
+		Background="white"
+		FontFamily="Segoe UI"
+		FontWeight="SemiBold"
+		FontSize="18"
+        Title="Create Prize" Height="400" Width="400"
+		Icon="/trophy_icon_124465.ico">
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="*"></RowDefinition>
+			<RowDefinition Height="auto"></RowDefinition>
+			<RowDefinition Height="auto"></RowDefinition>
+			<RowDefinition Height="auto"></RowDefinition>
+			<RowDefinition Height="auto"></RowDefinition>
+			<RowDefinition Height="auto"></RowDefinition>
+			<RowDefinition Height="auto"></RowDefinition>
+			<RowDefinition Height="auto"></RowDefinition>
+			<RowDefinition Height="auto"></RowDefinition>
+			<RowDefinition Height="*"></RowDefinition>
+		</Grid.RowDefinitions>
+
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="*"></ColumnDefinition>
+			<ColumnDefinition Width="auto"></ColumnDefinition>
+			<ColumnDefinition Width="auto"></ColumnDefinition>
+			<ColumnDefinition Width="*"></ColumnDefinition>
+		</Grid.ColumnDefinitions>
+
+		<Label Content="Create Prize"
+			   x:Name="lblCreatePrize"
+			   Grid.Row="1"
+			   Grid.Column="1" FontSize="21.333" />
+		
+		<!-- Place Number -->
+		<Label Content="Place Number"
+			   Grid.Row="2"
+			   Grid.Column="1"
+			   Margin="10" />
+		<TextBox x:Name="txtPlaceNumber"
+				 Grid.Row="2"
+				 Grid.Column="2" 
+				 Width="150" 
+				 Height="30" />
+
+		<!-- Place Name -->
+		<Label Content="Place Name"
+			   Grid.Row="3"
+			   Grid.Column="1"
+			   Margin="10" />
+		<TextBox x:Name="txtPlaceName"
+				 Grid.Row="3"
+				 Grid.Column="2"
+				 Width="150"
+				 Height="30" />
+
+		<!-- Place Amount -->
+		<Label Content="Place Amount"
+			   Grid.Row="4"
+			   Grid.Column="1"
+			   Margin="10" />
+		<TextBox x:Name="txtPlaceAmount"
+				 Grid.Row="4"
+				 Grid.Column="2"
+				 Width="150"
+				 Height="30" />
+
+		<Label Content="-or-"
+			   Grid.Row="5"
+			   Grid.Column="2" />
+
+		<!-- Prize Percentage -->
+		<Label Content="Prize Percentage"
+			   Grid.Row="6"
+			   Grid.Column="1"
+			   Margin="10" />
+		<TextBox x:Name="txtPrizePercentage"
+				 Grid.Row="6"
+				 Grid.Column="2"
+				 Width="150"
+				 Height="30" />
+		
+		<!-- Button Create Prize -->
+		<Button x:Name="btnCreatePrize"
+				Content="Create Prize"
+				Grid.Row="7"
+				Grid.Column="1"
+				Grid.ColumnSpan="2"
+				Background="{x:Null}"
+				Margin="20" 
+				Width="175" 
+				Height="40"/>
+		
+	</Grid>
+</Window>

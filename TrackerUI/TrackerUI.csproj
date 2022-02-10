@@ -11,7 +11,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="trophy_icon_124465.ico" />
+    <Resource Include="trophy_icon_124465.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
 </Project>

@@ -1,0 +1,162 @@
+﻿<Window x:Class="TrackerUI.CreateTeamForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TrackerUI"
+        mc:Ignorable="d"
+		Background="White"
+		FontFamily="Segoe UI"
+		FontWeight="SemiBold"
+		FontSize="18"
+        Title="Create Team" Height="500" Width="600"
+		Icon="/trophy_icon_124465.ico">
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="*"></RowDefinition>
+			<RowDefinition Height="auto"></RowDefinition>
+			<RowDefinition Height="auto"></RowDefinition>
+			<RowDefinition Height="auto"></RowDefinition>
+			<RowDefinition Height="auto"></RowDefinition>
+			<RowDefinition Height="auto"></RowDefinition>
+			<RowDefinition Height="auto"></RowDefinition>
+			<RowDefinition Height="auto"></RowDefinition>
+			<RowDefinition Height="auto"></RowDefinition>
+			<RowDefinition Height="*"></RowDefinition>
+		</Grid.RowDefinitions>
+
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="*"></ColumnDefinition>
+			<ColumnDefinition Width="auto"></ColumnDefinition>
+			<ColumnDefinition Width="2*"></ColumnDefinition>
+			<ColumnDefinition Width="auto"></ColumnDefinition>
+			<ColumnDefinition Width="auto"></ColumnDefinition>
+			<ColumnDefinition Width="auto"></ColumnDefinition>
+			<ColumnDefinition Width="*"></ColumnDefinition>
+		</Grid.ColumnDefinitions>
+
+		<!-- Create Team -->
+		<Label Grid.Row="1" Grid.Column="1" Content="Create Team" FontSize="21.333" FontWeight="Normal"></Label>
+		
+		<!-- Team Name -->
+		<Label Grid.Row="2" Grid.Column="1" Content="Team Name" Margin="0,5"></Label>
+		<TextBox Grid.Row="3"
+				 Grid.Column="1"
+				 x:Name="txtTeamName"/>
+
+		<!-- Select Team Member -->
+		<Label Grid.Row="4"
+			   Grid.Column="1"
+			   Content="Select Team Member"
+			   Margin="0,5"></Label>
+		<TextBox Grid.Row="5"
+				 Grid.Column="1"
+				 x:Name="txtSelectTeamMember" />
+		
+		<!-- Button Add Member-->
+		<Button x:Name="btnAddMember"
+				Grid.Row="6"
+				Grid.Column="1"
+				Content="Add Member"
+				Background="{x:Null}" 
+				Margin="0,10"
+				Padding="5"
+				FontSize="15"
+				Width="130"/>
+
+		<!-- GroupBox ADD MEMBER-->
+		<GroupBox Header="Add New Member"
+				  Grid.Row="7"
+				  Grid.Column="1"
+				  FontSize="15">
+			<Grid>
+				<Grid.RowDefinitions>
+					<RowDefinition></RowDefinition>
+					<RowDefinition></RowDefinition>
+					<RowDefinition></RowDefinition>
+					<RowDefinition></RowDefinition>
+					<RowDefinition></RowDefinition>
+				</Grid.RowDefinitions>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="auto"></ColumnDefinition>
+					<ColumnDefinition Width="auto"></ColumnDefinition>
+				</Grid.ColumnDefinitions>
+
+				<Label Content="First Name"
+					   Margin="5,0"
+					   Grid.Row="0" />
+				<TextBox x:Name="txtFirstName"
+						 Width="125"
+						 Grid.Row="0"
+						 Grid.Column="1" />
+
+				<Label Content="Last Name"
+					   Margin="5,0"
+					   Grid.Row="1" />
+				<TextBox x:Name="txtLastName"
+						 Width="125"
+						 Grid.Row="1"
+						 Grid.Column="1" />
+
+				<Label Content="Email"
+					   Margin="5,0"
+					   Grid.Row="2" />
+				<TextBox x:Name="txtEmail"
+						 Width="125"
+						 Grid.Row="2"
+						 Grid.Column="1" />
+
+				<Label Content="Cellphone"
+					   Margin="5,0"
+					   Grid.Row="3" />
+				<TextBox x:Name="txtCellphone"
+						 Width="125"
+						 Grid.Row="3"
+						 Grid.Column="1" />
+
+				<!-- Button Create Member-->
+				<Button x:Name="btnCreateMember"
+						Content="Add Member"
+						Background="{x:Null}"
+						Margin="0,10"
+						Padding="5"
+						FontSize="12"
+						Width="100"
+						Grid.Row="4"
+						Grid.ColumnSpan="2" />
+			</Grid>
+		</GroupBox>
+
+		<ListBox Grid.Row="3"
+				 Grid.Column="4"
+				 Grid.RowSpan="5"
+				 Width="175"
+				 x:Name="lstTeamMembersListBox" />
+
+		<!-- Button Deleted 2 -->
+		<Button x:Name="btnDeleted2"
+				Grid.Column="5"
+				Grid.Row="5"
+				Margin="10"
+				Grid.RowSpan="2"
+				FontSize="12"
+				Background="{x:Null}"
+				VerticalContentAlignment="Center"
+				Height="50"
+				Width="75">
+			<TextBlock>Delete<LineBreak></LineBreak>Selected</TextBlock>
+		</Button>
+
+		<!-- Button Add Member-->
+		<Button x:Name="btnCreateTeam"
+				Grid.Row="8"
+				Grid.Column="1"
+				Grid.ColumnSpan="4"
+				Content="Create Team"
+				Background="{x:Null}"
+				Margin="0,10"
+				Padding="5"
+				FontSize="15"
+				Width="150" />
+	</Grid>
+</Window>

@@ -1,0 +1,69 @@
+﻿<Window x:Class="TrackerUI.TournamentDashboardForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TrackerUI"
+        mc:Ignorable="d"
+        FontFamily="Segoe UI"
+        Background="White"
+        FontSize="18"
+        Title="Tournament Dashboard" Height="300" Width="400"
+        Icon="/trophy_icon_124465.ico">
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="auto"></ColumnDefinition>
+            <ColumnDefinition Width="auto"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+		<Label Grid.Row="1"
+			   Grid.Column="1"
+			   Content="Tournament Dashboard"
+			   FontSize="24"/>
+
+		<!-- Load Existing Tournament -->
+		<Label Grid.Row="2"
+			   Grid.Column="1"
+			   Content="Load Existing Tournament"
+			   HorizontalAlignment="center"
+			   Margin="0,10,0,0"/>
+		<ComboBox x:Name="cboLoadExistingTournament"
+				  Grid.Row="3"
+				  Grid.Column="1"
+				  Margin="5"
+				  Background="{x:Null}"
+				  BorderBrush="{x:Null}" />
+		
+		<!-- Button Load Tournament -->
+		<Button x:Name="btnLoadTournament"
+				Grid.Row="4"
+				Grid.Column="1"
+				Margin="5"
+				Content="Load Tournament" FontSize="14" Width="140" Padding="2" />
+
+		<!-- Button Create Tournament -->
+		<Button x:Name="btnCreateTournament"
+				Grid.Row="5"
+				Grid.Column="1"
+				Margin="5"
+				Content="Create Tournament"
+				FontSize="16"
+				Width="200"
+				Height="50"
+				Padding="2" />
+		
+	</Grid>
+</Window>
