@@ -8,6 +8,9 @@ namespace trackerLibrary
 {
    public class TeamModel
     {
+        /// <summary>
+        /// List of teammembers which gets initiliazed
+        /// </summary>
         public List<PersonModel> TeamMembers { get; set; } = new List<PersonModel>();
         public string TeamName { get; set; }
 
