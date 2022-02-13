@@ -11,6 +11,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\trackerLibrary\trackerLibrary.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Resource Include="trophy_icon_124465.ico">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>

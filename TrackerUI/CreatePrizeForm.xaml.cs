@@ -23,5 +23,10 @@ namespace TrackerUI
         {
             InitializeComponent();
         }
+
+        private void btnCreatePrize_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

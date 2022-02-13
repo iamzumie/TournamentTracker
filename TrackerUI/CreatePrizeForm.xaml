@@ -94,7 +94,8 @@
 				Background="{x:Null}"
 				Margin="20" 
 				Width="175" 
-				Height="40"/>
+				Height="40"
+				Click="btnCreatePrize_Click" />
 		
 	</Grid>
 </Window>

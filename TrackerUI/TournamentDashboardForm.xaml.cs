@@ -21,6 +21,8 @@ namespace TrackerUI
     {
         public TournamentDashboardForm()
         {
+
+            trackerLibrary.GlobalConfig.InitializeConnections(true, true);
             InitializeComponent();
         }
     }
